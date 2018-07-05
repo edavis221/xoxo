@@ -28,7 +28,9 @@ const getInput = player => async () => {
 // Create the store
 const game = createStore(gameReducer)
 
-// Debug: Print the state
+// Debug: Print the statelk
+
+console.log(game.getState().board.getIn([0,0]))
 // game.subscribe(() => console.log(game.getState()))
 
 game.subscribe(printBoard)
